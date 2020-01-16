@@ -1,11 +1,12 @@
-var express = require("express");
+//importing node framework
+var express = require('express');
+ 
 var app = express();
-app.use(express.static("public"));
-app.set("view engine", "ejs");
-app.set("views", "./views");
-var server = require("http").Server(app);
-
-//mở server chạy trên cổng 8282
-server.listen(8282);
-
-app.get('/', (req, res) => res.send('Hello World!'))
+//Respond with "hello world" for requests that hit our root "/"
+app.get('/', function (req, res) {
+ res.send('hello world');
+});
+//listen to port 3000 by default
+app.listen(process.env.PORT || 3000);
+ 
+module.exports = app;

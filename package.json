@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/TrangNguyen1908/Jenkins#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "supertest": "^4.0.2"
   }
 }
